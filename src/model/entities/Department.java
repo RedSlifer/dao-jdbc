@@ -31,10 +31,10 @@ public class Department implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Department that = (Department) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Department that = (Department) object;
         return Objects.equals(id, that.id);
     }
 
@@ -45,9 +45,6 @@ public class Department implements Serializable {
 
     @Override
     public String toString() {
-        return "Department{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Department{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }
